@@ -677,7 +677,7 @@ if (loading) {
           {/* Akad */}
           <div className="bg-gradient-to-br from-[#FFF8ED] to-[#F5E9D7] rounded-[40px] p-10 shadow-2xl">
 
-            <h3 className="font-wedding text-5xl text-yellow-700 mb-6">
+            <h3 className="font-wedding text-3xl sm:text-4xl md:text-5xl text-yellow-700 mb-6">
               Akad Nikah
             </h3>
 
@@ -688,8 +688,8 @@ if (loading) {
       Jumat, 26 Juni 2026
     </p>
 
-    <p className="mt-4 text-2xl text-stone-600">
-      Pukul 09.00 WIB
+    <p className="mt-4 text-lg sm:text-xl md:text-2xl text-stone-600">
+      Jam 09.00 WIB - Selesai
     </p>
   </div>
 
@@ -714,7 +714,7 @@ if (loading) {
             <div className="grid grid-cols-2 gap-4 gap-8 mt-6 text-left">
   
   <div>
-    <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-stone-700">
+    <p className="text-3xl font-semibold text-stone-700">
       Sabtu, 27 Juni 2026
     </p>
 
