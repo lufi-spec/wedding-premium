@@ -411,7 +411,7 @@ if (loading) {
 
   </div>
 
-
+</section>
 
       {/* QUOTE */}
       <section className="py-24 px-6 relative overflow-hidden">
