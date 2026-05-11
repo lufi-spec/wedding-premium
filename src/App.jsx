@@ -713,6 +713,7 @@ if (loading) {
 
         </div>
       </section>
+      
 {/* COUNTDOWN */}
 <section className="py-24 px-6 relative">
 
@@ -748,7 +749,6 @@ if (loading) {
 
   </div>
 
-</section>
 </section>
 
 {/* RSVP */}
