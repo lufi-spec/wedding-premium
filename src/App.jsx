@@ -752,7 +752,43 @@ if (loading) {
 
         </div>
       </section>
+{/* COUNTDOWN */}
+<section className="py-24 px-6 relative">
 
+  <div className="max-w-5xl mx-auto text-center">
+
+    <h2 className="font-wedding text-4xl text-yellow-700 mb-10">
+      Save The Date
+    </h2>
+
+    <div className="w-full flex justify-center gap-3 flex-nowrap overflow-x-auto pb-2">
+
+      <div className="bg-white/60 backdrop-blur-xl rounded-[24px] shadow-xl w-[80px] h-[100px] flex flex-col items-center justify-center shrink-0">
+        <h3 className="text-3xl sm:text-4xl font-bold text-yellow-700">{timeLeft.days || 0}</h3>
+        <p className="mt-3 tracking-[3px]">Hari</p>
+      </div>
+
+      <div className="bg-white/60 backdrop-blur-xl rounded-[24px] shadow-xl w-[80px] h-[100px] flex flex-col items-center justify-center shrink-0">
+        <h3 className="text-3xl sm:text-4xl font-bold text-yellow-700">{timeLeft.hours || 0}</h3>
+        <p className="mt-3 tracking-[3px]">Jam</p>
+      </div>
+
+      <div className="bg-white/60 backdrop-blur-xl rounded-[24px] shadow-xl w-[80px] h-[100px] flex flex-col items-center justify-center shrink-0">
+        <h3 className="text-3xl sm:text-4xl font-bold text-yellow-700">{timeLeft.minutes || 0}</h3>
+        <p className="mt-3 tracking-[3px]">Menit</p>
+      </div>
+
+      <div className="bg-white/60 backdrop-blur-xl rounded-[24px] shadow-xl w-[80px] h-[100px] flex flex-col items-center justify-center shrink-0">
+        <h3 className="text-3xl sm:text-4xl font-bold text-yellow-700">{timeLeft.seconds || 0}</h3>
+        <p className="mt-3 tracking-[3px]">Detik</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+</section>
 
 {/* RSVP */}
 <section id="rsvp" className="py-24 px-6">
