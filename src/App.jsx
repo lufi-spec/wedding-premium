@@ -366,7 +366,7 @@ if (loading) {
             The Wedding Of
           </p>
 
-          <h1 className="font-wedding  sm:text-5xl md:text-6xl md:text-[120px] text-yellow-700 leading-none">
+          <h1 className="font-wedding text-4xl sm:text-5xl md:text-6xl lg:text-[120px] text-yellow-700 leading-none">
             Meidy & Rais
           </h1>
 
@@ -423,25 +423,25 @@ if (loading) {
       Save The Date
     </h2>
 
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="w-full flex justify-center gap-3 flex-nowrap overflow-x-auto pb-2">
 
-      <div className="bg-white/60 backdrop-blur-xl rounded-[30px] shadow-xl py-6 px-2">
-        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-700">{timeLeft.days || 0}</h3>
+      <div className="bg-white/60 backdrop-blur-xl rounded-[24px] shadow-xl w-[80px] h-[100px] flex flex-col items-center justify-center shrink-0">
+        <h3 className="text-3xl sm:text-4xl font-bold text-yellow-700">{timeLeft.days || 0}</h3>
         <p className="mt-3 tracking-[3px]">Hari</p>
       </div>
 
-      <div className="bg-white/60 backdrop-blur-xl rounded-[30px] shadow-xl py-6 px-2">
-        <h3 className="text-5xl font-bold text-yellow-700">{timeLeft.hours || 0}</h3>
+      <div className="bg-white/60 backdrop-blur-xl rounded-[24px] shadow-xl w-[80px] h-[100px] flex flex-col items-center justify-center shrink-0">
+        <h3 className="text-3xl sm:text-4xl font-bold text-yellow-700">{timeLeft.hours || 0}</h3>
         <p className="mt-3 tracking-[3px]">Jam</p>
       </div>
 
-      <div className="bg-white/60 backdrop-blur-xl rounded-[30px] shadow-xl py-6 px-2">
-        <h3 className="text-5xl font-bold text-yellow-700">{timeLeft.minutes || 0}</h3>
+      <div className="bg-white/60 backdrop-blur-xl rounded-[24px] shadow-xl w-[80px] h-[100px] flex flex-col items-center justify-center shrink-0">
+        <h3 className="text-3xl sm:text-4xl font-bold text-yellow-700">{timeLeft.minutes || 0}</h3>
         <p className="mt-3 tracking-[3px]">Menit</p>
       </div>
 
-      <div className="bg-white/60 backdrop-blur-xl rounded-[30px] shadow-xl py-6 px-2">
-        <h3 className="text-5xl font-bold text-yellow-700">{timeLeft.seconds || 0}</h3>
+      <div className="bg-white/60 backdrop-blur-xl rounded-[24px] shadow-xl w-[80px] h-[100px] flex flex-col items-center justify-center shrink-0">
+        <h3 className="text-3xl sm:text-4xl font-bold text-yellow-700">{timeLeft.seconds || 0}</h3>
         <p className="mt-3 tracking-[3px]">Detik</p>
       </div>
 
@@ -804,7 +804,7 @@ if (loading) {
     />
   </div>
 
-  <div className="max-w-5xl mx-auto text-center">
+<div className="w-full max-w-5xl mx-auto text-center flex flex-col items-center">
 
     <p className="tracking-[6px] uppercase text-yellow-700 text-sm mb-3">
       Wedding Gift
