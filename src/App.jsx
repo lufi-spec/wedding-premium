@@ -217,7 +217,7 @@ if (loading) {
 <p className="text-gray-300 tracking-[6px] uppercase text-sm mb-4">
   Assalamu’alaikum Warahmatullahi Wabarakatuh
 </p>
-      <h1 className="font-wedding text-6xl text-yellow-500 mt-10">
+      <h1 className="font-wedding text-4xl sm:text-5xl md:text-6xl text-yellow-500 mt-10">
         Meidy & Rais
       </h1>
 
@@ -229,7 +229,7 @@ if (loading) {
   );
 }
   return (
-    <div className="bg-gradient-to-b from-[#F8F3ED] to-[#EFE6DA] overflow-x-hidden text-[#5B4636] relative">
+    <div className="bg-gradient-to-b from-[#F8F3ED] to-[#EFE6DA] overflow-x-hidden text-[#5B4636] relative w-full max-w-full from-[#F8F3ED] to-[#EFE6DA] overflow-x-hidden text-[#5B4636] relative">
       {/* Sparkle */}
 <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
 
@@ -290,7 +290,7 @@ if (loading) {
               The Wedding Of
             </p>
 
-            <h1 className="font-wedding text-7xl md:text-9xl text-[#D4AF37] drop-shadow-[0_0_20px_rgba(212,175,55,0.6)]">
+            <h1 className="font-wedding text-5xl sm:text-4xl sm:text-5xl md:text-6xl md:text-9xl text-[#D4AF37] drop-shadow-[0_0_20px_rgba(212,175,55,0.6)]">
               Meidy & Rais
             </h1>
 <div className="mb-8">
@@ -305,7 +305,7 @@ if (loading) {
     Kepada Yth.
   </p>
 
-  <h3 className="text-3xl text-white font-semibold mt-2">
+  <h3 className="text-xl sm:text-2xl text-white font-semibold mt-2 break-words">
     {guest}
   </h3>
 
@@ -366,11 +366,11 @@ if (loading) {
             The Wedding Of
           </p>
 
-          <h1 className="font-wedding text-7xl md:text-[120px] text-yellow-700 leading-none">
+          <h1 className="font-wedding text-5xl sm:text-4xl sm:text-5xl md:text-6xl md:text-[120px] text-yellow-700 leading-none">
             Meidy & Rais
           </h1>
 
-          <p className="mt-6 text-lg tracking-[10px]">
+          <p className="mt-6 text-lg tracking-[4px] sm:tracking-[10px]">
             27 Juni 2026
           </p>
 
@@ -419,14 +419,14 @@ if (loading) {
 
   <div className="max-w-5xl mx-auto text-center">
 
-    <h2 className="font-wedding text-6xl text-yellow-700 mb-10">
+    <h2 className="font-wedding text-4xl text-yellow-700 mb-10">
       Save The Date
     </h2>
 
-    <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-6 gap-6">
 
       <div className="bg-white/60 backdrop-blur-xl rounded-[30px] shadow-xl py-10">
-        <h3 className="text-5xl font-bold text-yellow-700">{timeLeft.days || 0}</h3>
+        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-700">{timeLeft.days || 0}</h3>
         <p className="mt-3 tracking-[3px]">Hari</p>
       </div>
 
@@ -524,7 +524,7 @@ if (loading) {
     بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
   </p>
 
-  <h2 className="font-wedding text-6xl text-yellow-700">
+  <h2 className="font-wedding text-5xl text-yellow-700">
     Mempelai
   </h2>
 
@@ -564,7 +564,7 @@ if (loading) {
 
       <img
         src={ceweImg}
-        className="w-64 h-64 object-cover rounded-full border-[6px] border-white shadow-2xl hover:scale-105 transition duration-700"
+        className="w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-full border-[6px] border-white shadow-2xl hover:scale-105 transition duration-700"
         alt="Mempelai Wanita"
       />
 
@@ -574,12 +574,12 @@ if (loading) {
 
 </div>
 
-            <h2 className="font-wedding text-5xl text-yellow-700 mt-6">
+            <h2 className="font-wedding text-3xl sm:text-4xl md:text-5xl text-yellow-700 mt-6">
               Meidy Tamara, S.PD
             </h2>
 
             <p className="mt-4 text-gray-600">
-              Putri dari Mahidin & Nurida
+              Putri dari Mahidin & Nuraida
             </p>
 
           </div>
@@ -610,7 +610,7 @@ if (loading) {
 
       <img
         src={cowoImg}
-        className="w-64 h-64 object-cover rounded-full border-[6px] border-white shadow-2xl hover:scale-105 transition duration-700"
+        className="w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-full border-[6px] border-white shadow-2xl hover:scale-105 transition duration-700"
         alt="Mempelai Pria"
       />
 
@@ -620,7 +620,7 @@ if (loading) {
 
 </div>
 
-            <h2 className="font-wedding text-[42px] leading-tight text-yellow-700 mt-6">
+            <h2 className="font-wedding text-3xl sm:text-4xl md:text-[42px] leading-tight text-yellow-700 mt-6">
               Muhammad Rais, S.H
             </h2>
 
@@ -642,7 +642,7 @@ if (loading) {
 
           <FaMapMarkerAlt className="mx-auto text-4xl text-yellow-700 mb-6" />
 
-          <h2 className="font-wedding text-6xl text-yellow-700 mb-6">
+          <h2 className="font-wedding text-5xl text-yellow-700 mb-6">
             Lokasi Acara
           </h2>
 
@@ -681,7 +681,7 @@ if (loading) {
               Akad Nikah
             </h3>
 
-           <div className="grid grid-cols-2 gap-8 mt-6 text-left">
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 text-left">
   
   <div>
     <p className="text-3xl font-semibold text-stone-700">
@@ -711,14 +711,14 @@ if (loading) {
               Resepsi
             </h3>
 
-            <div className="grid grid-cols-2 gap-8 mt-6 text-left">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 text-left">
   
   <div>
-    <p className="text-3xl font-semibold text-stone-700">
+    <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-stone-700">
       Sabtu, 27 Juni 2026
     </p>
 
-    <p className="mt-4 text-2xl text-stone-600">
+    <p className="mt-4 text-lg sm:text-xl md:text-2xl text-stone-600">
       Jam 10.00 WIB - Selesai
     </p>
   </div>
@@ -742,7 +742,7 @@ if (loading) {
 
   <div className="max-w-3xl mx-auto bg-white/60 backdrop-blur-xl rounded-[40px] shadow-2xl p-10">
 
-    <h2 className="font-wedding text-6xl text-yellow-700 text-center mb-10">
+    <h2 className="font-wedding text-4xl text-yellow-700 text-center mb-10">
       RSVP
     </h2>
 
@@ -810,7 +810,7 @@ if (loading) {
       Wedding Gift
     </p>
 
-    <h2 className="font-wedding text-6xl text-yellow-700 mb-6">
+    <h2 className="font-wedding text-4xl sm:text-5xl md:text-6xl text-yellow-700 mb-6">
       Tanda Kasih
     </h2>
 
@@ -826,7 +826,7 @@ if (loading) {
 
     </div>
 
-    <div className="grid md:grid-cols-2 gap-10">
+    <div className="grid md:grid-cols-1 md:grid-cols-2 gap-10">
 
       {/* BANK ACEH */}
       <div className="bg-white/70 backdrop-blur-xl rounded-[35px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-10 border border-white/40">
@@ -889,7 +889,7 @@ if (loading) {
 </section>
 
 {/* GALLERY */}
-<h2 className="font-wedding text-6xl text-yellow-700 text-center mb-6">
+<h2 className="font-wedding text-4xl sm:text-5xl md:text-6xl text-yellow-700 text-center mb-6">
   Gallery
 </h2>
 <p className="text-stone-500 text-center mt-2 mb-10 tracking-widest">
@@ -947,7 +947,7 @@ if (loading) {
       {/* BOTTOM NAV */}
       <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-40">
 
-        <div className="bg-[#314028]/80 border border-yellow-500/20 backdrop-blur-xl px-8 py-4 rounded-full flex gap-8 text-white shadow-2xl">
+        <div className="bg-[#314028]/80 border border-yellow-500/20 backdrop-blur-xl px-4 py-3 rounded-full flex gap-4 sm:gap-8 text-sm sm:text-base text-white shadow-2xl overflow-x-auto max-w-[95vw]">
 
          <button
   onClick={() =>
