@@ -11,10 +11,8 @@ import Navigation from "./components/Navigation";
 import Countdown from "./components/Countdown";
 import LoadingScreen from "./components/LoadingScreen";
 import MusicPlayer from "./components/MusicPlayer";
-import { useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import { useEffect } from "react";
-import { useState } from "react"
+import { useEffect, useState } from "react";
 import ShareButton from "./components/ShareButton";
 import shareWhatsApp from "./utils/shareWhatsApp";
 import SparkleBackground from "./components/SparkleBackground";
@@ -57,71 +55,15 @@ const handleSubmit = async (e) => {
   const [open, setOpen] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [timeLeft, setTimeLeft] = useState({});
-
-
 useEffect(() => {
-
-  setTimeout(() => {
-    setLoading(false);
-  }, 3000);
-
-}, []);
-
-useEffect(() => {
-
-  const targetDate = new Date("2026-06-26T09:00:00").getTime();
-
-  const interval = setInterval(() => {
-
-    const now = new Date().getTime();
-
-    const difference = targetDate - now;
-
-    if (difference > 0) {
-
-      const days = Math.floor(
-        difference / (1000 * 60 * 60 * 24)
-      );
-
-      const hours = Math.floor(
-        (difference / (1000 * 60 * 60)) % 24
-      );
-
-      const minutes = Math.floor(
-        (difference / (1000 * 60)) % 60
-      );
-
-      const seconds = Math.floor(
-        (difference / 1000) % 60
-      );
-
-      setTimeLeft({
-        days,
-        hours,
-        minutes,
-        seconds,
-      });
-
-    }
-
-  }, 1000);
-
-
-
-  return () => clearInterval(interval);
-
-}, []);
-
-useEffect(() => {
-
-  setTimeout(() => {
+  const timer = setTimeout(() => {
     setLoading(false);
   }, 2500);
 
+  return () => clearTimeout(timer);
 }, []);
 useEffect(() => {
-
-  const targetDate = new Date("2026-06-26T09:00:00").getTime();
+  const targetDate = new Date(2026, 5, 27, 9, 0, 0).getTime();
   const interval = setInterval(() => {
     const now = new Date().getTime();
     const difference = targetDate - now;
